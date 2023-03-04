@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Navigation</title>
+</head>
+<body>
+    
+
+<div class="burger" id="nav-bar">
+    <a href="#" class="active">Home</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+    <a class="icon" onclick="burgerMenu()">
+    <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="dropdown" id="drop-nav">
+    <a href="#" class="dropdown-active">Home</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+    <div class="dropdown-dropdown">
+      <button class="dropbtn">Channels 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">SVT 1</a>
+        <a href="#">TV 3</a>
+        <a href="#">Kanal 5</a>
+      </div>
+    </div> 
+    <a href="#">About</a>
+    <a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+</div>
+
+<section class="navigation-overlay">
+<div id="overlay" class="overlay-nav">
+    <a class="closebtn" onclick="closeNavOverlay()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+   
+</div>
+<span style="font-size:50px;cursor:pointer; color: #B05A7A" onclick="openNavOverlay()">&#9776; OPEN</span>
+</section>
+
+<section class="navigation-side">
+<div id="side" class="side-nav">
+    <button class="closebtn" onclick="closeNav()">&times;</button>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
+<div id="main">
+    <span class="open-btn" onclick="openNav()">&#9776; OPEN</span>
+</div>
+</section>
+    
+    
+
+
+
+<script>
+function burgerMenu() {
+    let burger = document.getElementById("nav-bar");
+    if (burger.className === "burger") {
+    burger.className += " responsive";
+    } else {
+    burger.className = "burger";
+    }
+}
+</script>
+
+<script>
+    function dropNav() {
+      let drop = document.getElementById("drop-nav");
+      if (drop.className === "dropdown") {
+        drop.className += " responsive";
+      } else {
+        drop.className = "dropdown";
+      }
+    }
+</script>
+
+<script>
+    function openNavOverlay() {
+      document.getElementById("overlay").style.width = "100%";
+    }
+    
+    function closeNavOverlay() {
+      document.getElementById("overlay").style.width = "0%";
+    }
+    </script>
+
+<script>
+    function openNav() {
+        document.getElementById("side").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("side").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+    </script>
+
+</body>
+</html>

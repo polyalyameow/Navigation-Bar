@@ -1,15 +1,25 @@
 
+html{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
 body{
-    margin: 0;
+    width: 80%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+    margin: 0;
+    /* border: 2px darkorchid solid; */
+
 }
 
 /*BURGER*/
 
 .burger{
     margin-top: 45px;
-    margin-bottom: 45px;
     overflow: hidden;
     background-color: #7A3E65;
 }

@@ -91,11 +91,17 @@ body{
     font-size: 17px;
   }
   
-  .dropdown-active {
+  .dropdown a.dropdown-active {
     background-color: #D9ACF5;
+  }
 
+
+.dropdown a:hover, .dropdown-dropdown:hover .dropbtn {
+    background-color: #4E31AA;
+    color: #FFF1DC;
   }
   
+
   .dropdown .icon {
     display: none;
   }
@@ -134,11 +140,7 @@ body{
     text-align: left;
   }
   
-  .dropdown a:hover, .dropdown-dropdown:hover .dropbtn {
-    background-color: #4E31AA;
-    color: #FFF1DC;
-  }
-  
+
   .dropdown-content a:hover {
     background-color: #4E31AA;
     color: #FFF1DC;
@@ -212,15 +214,15 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh; 
     top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
   }
   
   .overlay-nav a {
     padding: 8px;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 36px;
     color: black;
@@ -230,7 +232,7 @@ body{
   
   .overlay-nav a:hover, .overlay-nav a:focus {
     background-color: #F0D290;
-    border-radius: 30px;
+    border-radius: 10px;
     color: black;
     transition: 0.5s;
   }
@@ -243,10 +245,16 @@ body{
     cursor: pointer;
   }
   
-  @media screen and (max-height: 450px) {
-    .overlay-nav a {font-size: 20px}
+  @media screen and (max-width: 600px) {
+    .overlay-content{
+        overflow: hidden;
+        height: 80%;
+    }
+    .overlay-nav a {
+        font-size: 35px
+    }
+
     .overlay-nav .closebtn {
-    font-size: 40px;
     top: 15px;
     right: 35px;
     }
@@ -306,7 +314,7 @@ body{
 
 .open-btn:hover {
     background-color: #F6E1C3;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     
 }

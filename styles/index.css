@@ -29,7 +29,6 @@ body{
     float: left;
     display: block;
     color: #F6E1C3;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -51,7 +50,9 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-    .burger a:not(:first-child) {display: none;}
+    .burger a:not(:first-child) {
+        display: none;
+    }
     .burger a.icon {
       float: right;
       display: block;
@@ -59,7 +60,9 @@ body{
   }
   
   @media screen and (max-width: 600px) {
-    .burger.responsive {position: relative;}
+    .burger.responsive {
+        position: relative;
+    }
     .burger.responsive .icon {
       position: absolute;
       right: 0;
@@ -85,7 +88,6 @@ body{
     float: left;
     display: block;
     color: #FFF1DC;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -302,8 +304,6 @@ body{
     font-size: 36px;
     margin-left: 50px;
 }
-
-
 
 
 .open-btn {

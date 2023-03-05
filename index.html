@@ -12,41 +12,41 @@
     
 
     <div class="burger" id="nav-bar">
-        <a href="#" class="active">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-        <a href="#">Prices</a>
-        <a class="icon" onclick="burgerMenu()">
+        <a href="#" class="burger-link burger-link-active">Home</a>
+        <a class="burger-link" href="#">Projects</a>
+        <a class="burger-link" href="#">Contact</a>
+        <a class="burger-link" href="#">Prices</a>
+        <a class="burger-link icon" onclick="burgerMenu()">
             <i class="fas fa-bars"></i>
         </a>
     </div>
 
     <div class="dropdown" id="drop-nav">
-        <a href="#" class="dropdown-active">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#" class="dropdown-link active">Home</a>
+        <a class="dropdown-link" href="#">Projects</a>
+        <a class="dropdown-link" href="#">Contact</a>
         <div class="dropdown-dropdown">
         <button class="dropbtn">Channels 
             <i class="fas fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="#">SVT 1</a>
-            <a href="#">TV 3</a>
-            <a href="#">Kanal 5</a>
+            <a class="dropdown-content-link" href="#">SVT 1</a>
+            <a class="dropdown-content-link" href="#">TV 3</a>
+            <a class="dropdown-content-link" href="#">Kanal 5</a>
         </div>
         </div> 
-        <a href="#">About</a>
-        <a class="icon" onclick="dropNav()"><i class="fas fa-bars"></i></a>
+        <a class="dropdown-link" href="#">About</a>
+        <a class="dropdown-link icon" onclick="dropNav()"><i class="fas fa-bars"></i></a>
     </div>
 
     <section class="navigation-overlay">
     <div id="overlay" class="overlay-nav">
-        <a class="closebtn" onclick="closeNavOverlay()">&times;</a>
+        <a class="closebtn overlay-nav-link" onclick="closeNavOverlay()">&times;</a>
         <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Prices</a>
-            <a href="#">Contact</a>
+            <a class="overlay-nav-link" href="#">About</a>
+            <a class="overlay-nav-link" href="#">Projects</a>
+            <a class="overlay-nav-link" href="#">Prices</a>
+            <a class="overlay-nav-link" href="#">Contact</a>
         </div>
     
     </div>
@@ -56,10 +56,10 @@
     <section class="navigation-side">
     <div id="side" class="side-nav">
         <button class="closebtn" onclick="closeNav()">&times;</button>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Prices</a>
-        <a href="#">Contact</a>
+        <a class="navigation-side-link" href="#">About</a>
+        <a class="navigation-side-link" href="#">Projects</a>
+        <a class="navigation-side-link" href="#">Prices</a>
+        <a class="navigation-side-link" href="#">Contact</a>
     </div>
     <div id="main">
         <span class="open-btn" onclick="openNav()">&#9776; OPEN</span>

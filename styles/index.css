@@ -25,7 +25,7 @@ body{
 }
 
 
-.burger a {
+.burger-link {
     float: left;
     display: block;
     color: #F6E1C3;
@@ -35,22 +35,22 @@ body{
 }
 
 
-.burger a:hover {
+.burger-link:hover {
     background-color: #E9A178;
 }
 
 
-.burger a.active {
+.burger-link-active {
     background-color: #A84448;
 
 }
   
-.burger .icon {
+.icon {
     display: none;
 }
 
 @media screen and (max-width: 600px) {
-    .burger a:not(:first-child) {
+    .burger-link:not(:first-child) {
         display: none;
     }
     .burger a.icon {
@@ -84,7 +84,7 @@ body{
     background-color: #3A98B9;
   }
   
-  .dropdown a {
+  .dropdown-link {
     float: left;
     display: block;
     color: #FFF1DC;
@@ -93,12 +93,12 @@ body{
     font-size: 17px;
   }
   
-  .dropdown a.dropdown-active {
+  .active {
     background-color: #D9ACF5;
   }
 
 
-.dropdown a:hover, .dropdown-dropdown:hover .dropbtn {
+.dropdown-link:hover, .dropdown-dropdown:hover .dropbtn {
     background-color: #4E31AA;
     color: #FFF1DC;
   }
@@ -133,7 +133,7 @@ body{
     z-index: 1;
   }
   
-  .dropdown-content a {
+  .dropdown-content-link {
     float: none;
     color: #FFF1DC;
     padding: 12px 16px;
@@ -143,7 +143,7 @@ body{
   }
   
 
-  .dropdown-content a:hover {
+  .dropdown-content-link:hover {
     background-color: #4E31AA;
     color: #FFF1DC;
   }
@@ -153,7 +153,7 @@ body{
   }
   
   @media screen and (max-width: 600px) {
-    .dropdown a:not(:first-child), .dropdown-dropdown .dropbtn {
+    .dropdown-link:not(:first-child), .dropdown-dropdown .dropbtn {
       display: none;
     }
     .dropdown a.icon {
@@ -222,7 +222,7 @@ body{
     text-align: center;
   }
   
-  .overlay-nav a {
+  .overlay-nav-link {
     padding: 8px;
     border-radius: 10px;
     text-decoration: none;
@@ -232,7 +232,7 @@ body{
    
   }
   
-  .overlay-nav a:hover, .overlay-nav a:focus {
+  .overlay-nav-link:hover, .overlay-nav-link:focus {
     background-color: #F0D290;
     border-radius: 10px;
     color: black;
@@ -252,7 +252,7 @@ body{
         overflow: hidden;
         height: 80%;
     }
-    .overlay-nav a {
+    .overlay-nav-link {
         font-size: 35px
     }
 
@@ -283,7 +283,7 @@ body{
     padding-top: 60px;
 }
 
-.side-nav a {
+.navigation-side-link {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -292,7 +292,7 @@ body{
     transition: 0.3s;
 }
 
-.side-nav a:hover {
+.navigation-side-link:hover {
     background-color: #95D5B2;
     color: black;
 }
